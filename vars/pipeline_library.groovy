@@ -31,7 +31,7 @@ def call (Map config)
             stage('GetUserJenkins') 
                 {  
                     wrap([$class: 'BuildUser']) {
-                    def user = env.BUILD_USER
+                    def user = env.BUILD_USER_ID
                     echo "${user}"
   }
                 }
