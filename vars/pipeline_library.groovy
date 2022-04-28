@@ -33,9 +33,9 @@ def call (Map config)
                     wrap([$class: 'BuildUser']) {
                     def user = env.BUILD_USER_ID
                     echo "${user}"
-                    def list = ['AmaniGHADDAB']
-                    echo "${list}"
-                    if ("${list}".contains("${user}"))
+                    //def list = ['AmaniGHADDAB']
+                    echo "${devValidator}"
+                    if ("${devValidator}".contains("${user}"))
                     {
                         echo"ouii"
                     }
