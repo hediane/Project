@@ -37,11 +37,11 @@ def call (Map config)
                     echo "${config.devValidator}"
                     if ("${config.devValidator}".contains("${user}"))
                     {
-                        echo"ouii"
+                        echo"Validate"
                     }
                     else
                     {
-                        echo"non"
+                        echo"Don't have access"
                     }
   }
                 }
