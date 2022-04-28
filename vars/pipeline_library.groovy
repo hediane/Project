@@ -28,6 +28,14 @@ def call (Map config)
                     echo "Buid Image with docker-compose "
                     //echo "${config.dockerfileLocation}",
                 }
+            stage('GetUserJenkins') 
+                {  
+                    wrap([$class: 'BuildUser']) {
+                    def user = env.BUILD_USER
+                    echo "${user}"
+  }
+                }
+            
     }
 
 }
