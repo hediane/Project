@@ -35,7 +35,7 @@ def call (Map config)
                     echo "${user}"
                     def list = ['hediane','AmaniGHADDAB']
                     echo "${list}"
-                    if (${list}.contains(${user}))
+                    if ("${list}".contains("${user}"))
                     {
                         echo"ouii"
                     }
