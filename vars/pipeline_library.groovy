@@ -34,8 +34,8 @@ def call (Map config)
                     def user = env.BUILD_USER_ID
                     echo "${user}"
                     //def list = ['AmaniGHADDAB']
-                    echo "${devValidator}"
-                    if ("${devValidator}".contains("${user}"))
+                    echo "${config.devValidator}"
+                    if ("${config.devValidator}".contains("${user}"))
                     {
                         echo"ouii"
                     }
