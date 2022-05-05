@@ -4,7 +4,7 @@ services:
     build:
       context : ./Mvc/
       dockerfile : dockerfile
-    container_name: project
+    container_name: deploy_project
     volumes:
       - ./:/var/www
     expose :

@@ -41,9 +41,28 @@ def call (Map config)
                     }
                     else
                     {
+                        post {
+                            failure {
+                                slackSend color: 'danger', channel: '#devops', message: "<${currentBuild.absoluteUrl}|Server build ${env.BUILD_NUMBER}> failed to deploy build "
+                            }
+			}
                         echo"Don't have access"
                     }
-  }
+                 }
+                }
+                stage('Decide deploy to test servers') 
+                {  
+                    steps 
+                    {
+                        script {
+                            DEPLOY_TO_TEST_SERVERS = input message: 'User input required',
+                                    submitter: 'authenticated',
+                                    parameters: [choice(name: 'Deploy to the test servers', choices: 'no\nyes', description: 'Choose "yes" if you want to deploy the test servers')]
+                            if (DEPLOY_TO_TEST_SERVERS == 'no') {
+                                slackSend color: 'warning', channel: '#devops', message: "<${currentBuild.absoluteUrl}|Server build ${env.BUILD_NUMBER}> skips all further steps"
+                            }
+                        }
+			        }       
                 }
             
     }
