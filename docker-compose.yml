@@ -4,15 +4,13 @@ services:
   build:
    context : ./Mvc/
    dockerfile : dockerfile
-  container_name: deploy_project
-  volumes:
-   - ./:/var/www
+  container_name: deploy_projet
   expose :
    - "5000"
   depends_on:
    - nginx
   restart : always
-  
+
  nginx:
   image: nginx:alpine
   volumes:
