@@ -5,8 +5,22 @@ services:
       context : ./Mvc/
       dockerfile : dockerfile
     container_name: project
+    volumes:
+      - ./:/var/www
     expose :
       - "5000"
- 
+    depends_on:
+      - reversproxy
+
+  reversproxy:
+    image: nginx:alpine
+    volumes:
+      - "./config/docker/nginx/default.conf:/etc/nginx/conf.d/default.conf:ro"
+    volumes_from:
+      - projet
+    ports:
+      - "4001:80"
+    restart : always
+    
 
 
