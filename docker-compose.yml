@@ -10,14 +10,14 @@ services:
   expose :
    - "5000"
   depends_on:
-   - nginx
+   - reversproxy
   restart : always
 
- nginx:
+ reversproxy:
   image: nginx:alpine
   volumes:
    - ./:/var/www
-   - "./nginx.conf:/etc/nginx/nginx.d"
+   - "./nginx.conf:/etc/nginx/nginx.conf:ro"
   ports:
    - "4001:80"
   restart : always
