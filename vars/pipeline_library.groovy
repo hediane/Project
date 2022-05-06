@@ -42,7 +42,7 @@ def call (Map config)
                     else
                     {
                            
-                        slackSend color: 'danger', channel: '#devops', message: "<${currentBuild.absoluteUrl}|Server build ${env.BUILD_NUMBER}> failed to deploy build "
+                        //slackSend color: 'danger', channel: '#devops', message: "<${currentBuild.absoluteUrl}|Server build ${env.BUILD_NUMBER}> failed to deploy build "
 	                       echo"Don't have access"
                     }
                  }
