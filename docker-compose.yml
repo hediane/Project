@@ -6,8 +6,6 @@ services:
    context : ./Mvc/
    dockerfile : Dockerfile
   container_name : project
-  volumes:
-      - ./:/var/www
   expose:
    - "5000"
   depends_on:
