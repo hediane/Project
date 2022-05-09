@@ -3,20 +3,20 @@ version: '3.7'
 services:
  projet:
   build:
-   context : ./Mvc/
-   dockerfile : Dockerfile
-  container_name : project
+   context: ./Mvc/
+   dockerfile: Dockerfile
+  container_name: project_mvc
   expose:
    - "5000"
   depends_on:
-   - nginx_
+   - nginx_proxy
   restart : always
 
- nginx_:
+ nginx_proxy:
   build:
    context: ./nginx/
    dockerfile: Dockerfile
-  container_name: nginx_deploy_project
+  container_name: nginx_mvc
   volumes:
    - ./:/var/www
   ports:
