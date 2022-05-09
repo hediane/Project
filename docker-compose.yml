@@ -19,6 +19,8 @@ services:
    context : ./nginx/
    dockerfile : Dockerfile
   container_name: nginx_deploy_project
+  volumes:
+   - ./:/var/www
   ports:
    - "4001:80" 
   restart : always
