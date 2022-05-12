@@ -16,7 +16,6 @@ services:
 
  nginx_proxy:
   build:
-    build:
     context : ./nginx/
     dockerfile : Dockerfile
   container_name: nginx_mvc
