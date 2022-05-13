@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Mvc.Models;
+using Microsoft.Extensions.Logging;
 
 namespace Mvc.Controllers
 {
@@ -15,6 +16,7 @@ namespace Mvc.Controllers
 
         public HomeController(ILogger<HomeController> logger)
         {
+            _logger.LogInformation("HomeController Index executed at {date}", DateTime.UtcNow);
             _logger = logger;
         }
 
