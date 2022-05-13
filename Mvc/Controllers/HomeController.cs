@@ -16,12 +16,13 @@ namespace Mvc.Controllers
 
         public HomeController(ILogger<HomeController> logger)
         {
-            _logger.LogInformation("HomeController Index executed at {date}", DateTime.UtcNow);
             _logger = logger;
         }
 
         public IActionResult Index()
         {
+            _logger.LogInformation("HomeController Index executed at {date}", DateTime.UtcNow);
+
             return View();
         }
 
