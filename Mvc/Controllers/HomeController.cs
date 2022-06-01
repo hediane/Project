@@ -21,7 +21,7 @@ namespace Mvc.Controllers
 
         public IActionResult Index()
         {
-            _logger.LogInformation("HomeController Index executed at {date}", DateTime.UtcNow);
+            _logger.LogInformation("Hello guys i'm hediane at {date}", DateTime.UtcNow);
 
             return View();
         }

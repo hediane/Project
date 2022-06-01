@@ -18,10 +18,7 @@ namespace Mvc
         {
             ConfigureLogging();
             CreateHost(args);
-
-
         }
-
         private static void CreateHost(string[] args)
         {
         try
@@ -61,6 +58,7 @@ namespace Mvc
 		.Build();
 
 	    Log.Logger = new LoggerConfiguration()
+		.WriteTo.File("log-.txt",rollingInterval: RollingInterval.Day)
 		.Enrich.FromLogContext()
 		.Enrich.WithMachineName()
 		.WriteTo.Debug()

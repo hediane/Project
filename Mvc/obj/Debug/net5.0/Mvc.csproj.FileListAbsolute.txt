@@ -38,9 +38,7 @@ C:\Users\ASUS\Desktop\Project\Mvc\obj\Debug\net5.0\ref\Mvc.dll
 C:\Users\ASUS\Desktop\Project\Mvc\obj\Debug\net5.0\Mvc.pdb
 C:\Users\ASUS\Desktop\Project\Mvc\obj\Debug\net5.0\Mvc.genruntimeconfig.cache
 C:\Users\ASUS\Desktop\Project\Mvc\obj\Debug\net5.0\Mvc.csproj.CopyComplete
-C:\Users\ASUS\Desktop\Project\Mvc\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
 C:\Users\ASUS\Desktop\Project\Mvc\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
-C:\Users\ASUS\Desktop\Project\Mvc\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\ASUS\Desktop\Project\Mvc\bin\Debug\net5.0\Serilog.dll
 C:\Users\ASUS\Desktop\Project\Mvc\bin\Debug\net5.0\Serilog.AspNetCore.dll
 C:\Users\ASUS\Desktop\Project\Mvc\bin\Debug\net5.0\Serilog.Expressions.dll
@@ -53,3 +51,7 @@ C:\Users\ASUS\Desktop\Project\Mvc\bin\Debug\net5.0\Serilog.Sinks.Debug.dll
 C:\Users\ASUS\Desktop\Project\Mvc\bin\Debug\net5.0\Serilog.Sinks.File.dll
 C:\Users\ASUS\Desktop\Project\Mvc\bin\Debug\net5.0\Serilog.Sinks.PeriodicBatching.dll
 C:\Users\ASUS\Desktop\Project\Mvc\bin\Debug\net5.0\Serilog.Sinks.Seq.dll
+C:\Users\ASUS\Desktop\Project\Mvc\bin\Debug\net5.0\Elasticsearch.Net.dll
+C:\Users\ASUS\Desktop\Project\Mvc\bin\Debug\net5.0\Serilog.Enrichers.Environment.dll
+C:\Users\ASUS\Desktop\Project\Mvc\bin\Debug\net5.0\Serilog.Formatting.Elasticsearch.dll
+C:\Users\ASUS\Desktop\Project\Mvc\bin\Debug\net5.0\Serilog.Sinks.Elasticsearch.dll
